@@ -392,7 +392,7 @@ ul {
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: center center;
+    object-position: right center;
     transform: scale(1.01);
 }
 
