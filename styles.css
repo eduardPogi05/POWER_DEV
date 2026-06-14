@@ -370,8 +370,8 @@ ul {
 
 .hero-showcase {
     position: relative;
-    width: min(440px, 100%);
-    aspect-ratio: 3 / 5;
+    width: min(520px, 100%);
+    aspect-ratio: 3 / 4;
     border-radius: 24px;
     overflow: hidden;
     border: 1px solid rgba(96, 165, 250, 0.26);
@@ -392,7 +392,7 @@ ul {
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: center top;
+    object-position: center center;
     transform: scale(1.01);
 }
 
