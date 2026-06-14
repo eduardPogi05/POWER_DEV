@@ -575,6 +575,137 @@ ul {
     margin-top: 5px;
 }
 
+/* ===== MEET THE FOUNDER SECTION ===== */
+.founder {
+    padding: 100px 0;
+    background: var(--dark-2);
+}
+
+.founder-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.founder-img-wrapper {
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.founder-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: var(--radius);
+    border: 2px solid rgba(37, 99, 235, 0.3);
+    box-shadow: var(--shadow);
+    transition: transform 0.5s ease;
+}
+
+.founder-img:hover {
+    transform: scale(1.02);
+}
+
+.founder-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.founder-title {
+    color: var(--primary-light);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.founder-bio {
+    color: var(--gray-light);
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+.founder-details {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.founder-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 20px;
+    background: var(--dark);
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+.founder-detail-item:hover {
+    border-color: rgba(37, 99, 235, 0.3);
+}
+
+.founder-detail-item i {
+    color: var(--primary-light);
+    font-size: 1.2rem;
+    margin-top: 3px;
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.founder-detail-item strong {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+
+.founder-detail-item p {
+    color: var(--gray-light);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.founder-detail-item .detail-sub {
+    color: var(--gray);
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+
+.founder-socials {
+    display: flex;
+    gap: 12px;
+}
+
+.founder-socials a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--dark);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.founder-socials a:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.founder-socials a i {
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
 /* ===== SERVICES SECTION ===== */
 .services {
     padding: 100px 0;
@@ -1359,6 +1490,17 @@ ul {
     .about-image {
         max-width: 350px;
         margin: 0 auto;
+    }
+
+    .founder-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .founder-img {
+        height: 400px;
+        max-width: 350px;
+        margin: 0 auto;
+        display: block;
     }
 
     .services-grid {
